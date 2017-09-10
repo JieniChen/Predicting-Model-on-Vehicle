@@ -30,6 +30,11 @@ import matplotlib.pyplot as plt
 import scikitplot.plotters as skplt
 from sklearn.metrics import precision_recall_curve, auc
 
+# --------------------------Import data, here we are using the data after oversampling ------------------------------
+# the detail code of oversampling is in my account
+# Link https://github.com/JieniChen/resampling-data
+
+
 df = pd.read_csv("smote result.csv", encoding = "ISO-8859-1")
 data_clean = df.dropna()
 
@@ -46,7 +51,6 @@ scaled_features = scaler.transform(df.drop('departure', axis = 1))
 
 df_feat = pd.DataFrame(scaled_features, columns = df.columns[:-1])
 
-
 # accuracy_list = []
 # accuracy_list_decision = []
 # fMeasure_list = []
@@ -61,6 +65,7 @@ y_real = []
 y_proba = []
 # f, axes = plt.subplots(1, 2, figsize=(10, 5))
 
+#------------------------------------------------5-flod cross validation ----------------------------
 kf = KFold(n_splits=5)
 i = 1
 
