@@ -24,7 +24,7 @@ Left: A partitioned two-dimensional feature space. These partitions could not ha
 
 A tree can be "learned" by splitting the source set into subsets based on an attribute value test. This process is repeated on each derived subset in a recursive manner called recursive partitioning. See the examples illustrated in the figure for spaces that have and have not been partitioned using recursive partitioning, or recursive binary splitting. The recursion is completed when the subset at a node has all the same value of the target variable, or when splitting no longer adds value to the predictions. This process of top-down induction of decision trees (TDIDT) is an example of a greedy algorithm, and it is by far the most common strategy for learning decision trees from data.
 
-
+![alt text](https://github.com/JieniChen/Predicting-Model-on-Vehicle/blob/master/Images/desicionTree.png)
 
 
 The Model Compare the Desicion tree and K-Nearest Neighboors Algorithm base on the presicion and recall
