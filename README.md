@@ -4,7 +4,7 @@
 - [Data Set](#this-model-build-up-a-predicting-model-based-on-the-vehicle-history-data)
 - [Cross Validation](#cross-validation)
   - [This model used 5-flod cross validation(Below is the result before data oversampling)](#this-model-used-5-flod-cross-validationbelow-is-the-result-before-data-oversampling)
-  - [Due to the imbalance of the data, we oversampling the data [here](https://github.com/JieniChen/resampling-data)](#due-to-the-imbalance-of-the-data-we-oversampling-the-data-herehttpsgithubcomjienichenresampling-data)
+  - [OverSampling](#due-to-the-imbalance-of-the-data-we-oversampling-the-data-herehttpsgithubcomjienichenresampling-data)
 - [Desicion Tree and K-Nearest Neighbors](#desicion-tree-and-k-nearest-neighbors)
   - [Desicion Tree](#desicion-tree)
   - [K-Nearest Neighbors](#k-nearest-neighbors)
