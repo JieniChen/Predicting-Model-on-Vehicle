@@ -15,7 +15,9 @@ The goal is to predict the departure action and give the driver a warning
 # Cross Validation 
 Learning the parameters of a prediction function and testing it on the same data is a methodological mistake: a model that would just repeat the labels of the samples that it has just seen would have a perfect score but would fail to predict anything useful on yet-unseen data. This situation is called overfitting. To avoid it, it is common practice when performing a (supervised) machine learning experiment to hold out part of the available data as a test set X_test, y_test. Note that the word “experiment” is not intended to denote academic use only, because even in commercial settings machine learning usually starts out experimentally.
 
-## This model used 5-flod cross validation
+## This model used 5-flod cross validation(Below is the result before data oversampling)
+## Due to the imbalance of the data, we oversampling the data [here](https://github.com/JieniChen/resampling-data)
+
 ```
 Python 3.6.0 (v3.6.0:41df79263a11, Dec 22 2016, 17:23:13) 
 [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
