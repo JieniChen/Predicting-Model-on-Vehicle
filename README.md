@@ -26,12 +26,29 @@ A tree can be "learned" by splitting the source set into subsets based on an att
 
 ![alt text](https://github.com/JieniChen/Predicting-Model-on-Vehicle/blob/master/Images/desicionTree.png)
 
+### K-Nearest Neighbors 
+Here's an example of k-NN classification. The test sample (green circle) should be classified either to the first class of blue squares or to the second class of red triangles. If k = 3 (solid line circle) it is assigned to the second class because there are 2 triangles and only 1 square inside the inner circle. If k = 5 (dashed line circle) it is assigned to the first class (3 squares vs. 2 triangles inside the outer circle).
 
-The Model Compare the Desicion tree and K-Nearest Neighboors Algorithm base on the presicion and recall
+![alt text](https://github.com/JieniChen/Predicting-Model-on-Vehicle/blob/master/Images/279px-KnnClassification.svg.png)
 
 
+### Comparision of Desicion and K-Nearest Neighbors 
 
-Also the Model generate the Precision and Recall Curve 
+The model compares the Desicion tree and K-Nearest Neighboors Algorithm base on the presicion and recall
+
+Precision-Recall is a useful measure of success of prediction when the classes are very imbalanced. In information retrieval, precision is a measure of result relevancy, while recall is a measure of how many truly relevant results are returned.
+
+
+Below is the Precision and Recall Comparisions plots dsicion and KNN
+![alt text](https://github.com/JieniChen/Predicting-Model-on-Vehicle/blob/master/Images/precision.png)
+![alt text](https://github.com/JieniChen/Predicting-Model-on-Vehicle/blob/master/Images/recall.png)
+
+
+The precision-recall curve shows the tradeoff between precision and recall for different threshold. A high area under the curve represents both high recall and high precision, where high precision relates to a low false positive rate, and high recall relates to a low false negative rate. High scores for both show that the classifier is returning accurate results (high precision), as well as returning a majority of all positive results (high recall).
+
+![alt text](https://github.com/JieniChen/Predicting-Model-on-Vehicle/blob/master/Images/Precisionrecall.png)
+
+Belos 
 
 
 
@@ -39,4 +56,5 @@ Also the Model generate the Precision and Recall Curve
 Ref:
 https://en.wikipedia.org/wiki/Decision_tree_learning
 http://sebastianraschka.com/Articles/2014_intro_supervised_learning.html#machine-learning-and-pattern-classification
+http://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_recall.html
 
