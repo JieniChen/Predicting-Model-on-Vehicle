@@ -16,7 +16,150 @@ The goal is to predict the departure action and give the driver a warning
 Learning the parameters of a prediction function and testing it on the same data is a methodological mistake: a model that would just repeat the labels of the samples that it has just seen would have a perfect score but would fail to predict anything useful on yet-unseen data. This situation is called overfitting. To avoid it, it is common practice when performing a (supervised) machine learning experiment to hold out part of the available data as a test set X_test, y_test. Note that the word “experiment” is not intended to denote academic use only, because even in commercial settings machine learning usually starts out experimentally.
 
 ## This model used 5-flod cross validation
+```
+Python 3.6.0 (v3.6.0:41df79263a11, Dec 22 2016, 17:23:13) 
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+== RESTART: /Users/chenjenny/Rscript/Log-Based/preditiveModel/preditive.py ==
 
+xxxxxxxxxxxxxxxxxxxxxxxxxx Run 1 xxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------KNN Classification------------------------------------
+Accuracy is :
+0.998475609756
+[[3919    0]
+ [   6   11]]
+             precision    recall  f1-score   support
+
+          0       1.00      1.00      1.00      3919
+          1       1.00      0.65      0.79        17
+
+avg / total       1.00      1.00      1.00      3936
+
+----------------------------Decision Tree------------------------------------
+[[3919    0]
+ [  17    0]]
+
+Warning (from warnings module):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/metrics/classification.py", line 1113
+    'precision', 'predicted', average, warn_for)
+UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+             precision    recall  f1-score   support
+
+          0       1.00      1.00      1.00      3919
+          1       0.00      0.00      0.00        17
+
+avg / total       0.99      1.00      0.99      3936
+
+
+Warning (from warnings module):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/metrics/classification.py", line 1113
+    'precision', 'predicted', average, warn_for)
+UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+Accuracy Score for graph1493262362752.pdf is
+0.995680894309
+xxxxxxxxxxxxxxxxxxxxxxxxxx Run 2 xxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------KNN Classification------------------------------------
+Accuracy is :
+0.999491869919
+[[3931    0]
+ [   2    3]]
+             precision    recall  f1-score   support
+
+          0       1.00      1.00      1.00      3931
+          1       1.00      0.60      0.75         5
+
+avg / total       1.00      1.00      1.00      3936
+
+----------------------------Decision Tree------------------------------------
+[[3931    0]
+ [   5    0]]
+             precision    recall  f1-score   support
+
+          0       1.00      1.00      1.00      3931
+          1       0.00      0.00      0.00         5
+
+avg / total       1.00      1.00      1.00      3936
+
+Accuracy Score for graph1493262364219.pdf is
+0.998729674797
+xxxxxxxxxxxxxxxxxxxxxxxxxx Run 3 xxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------KNN Classification------------------------------------
+Accuracy is :
+1.0
+[[3935]]
+             precision    recall  f1-score   support
+
+          0       1.00      1.00      1.00      3935
+
+avg / total       1.00      1.00      1.00      3935
+
+----------------------------Decision Tree------------------------------------
+[[3935]]
+             precision    recall  f1-score   support
+
+          0       1.00      1.00      1.00      3935
+
+avg / total       1.00      1.00      1.00      3935
+
+Accuracy Score for graph1493262365790.pdf is
+1.0
+xxxxxxxxxxxxxxxxxxxxxxxxxx Run 4 xxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------KNN Classification------------------------------------
+Accuracy is :
+0.999745870394
+[[3925    0]
+ [   1    9]]
+             precision    recall  f1-score   support
+
+          0       1.00      1.00      1.00      3925
+          1       1.00      0.90      0.95        10
+
+avg / total       1.00      1.00      1.00      3935
+
+----------------------------Decision Tree------------------------------------
+[[3925    0]
+ [  10    0]]
+             precision    recall  f1-score   support
+
+          0       1.00      1.00      1.00      3925
+          1       0.00      0.00      0.00        10
+
+avg / total       0.99      1.00      1.00      3935
+
+Accuracy Score for graph1493262367468.pdf is
+0.997458703939
+xxxxxxxxxxxxxxxxxxxxxxxxxx Run 5 xxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------KNN Classification------------------------------------
+Accuracy is :
+0.999491740788
+[[3928    0]
+ [   2    5]]
+             precision    recall  f1-score   support
+
+          0       1.00      1.00      1.00      3928
+          1       1.00      0.71      0.83         7
+
+avg / total       1.00      1.00      1.00      3935
+
+----------------------------Decision Tree------------------------------------
+[[3928    0]
+ [   7    0]]
+             precision    recall  f1-score   support
+
+          0       1.00      1.00      1.00      3928
+          1       0.00      0.00      0.00         7
+
+avg / total       1.00      1.00      1.00      3935
+
+Accuracy Score for graph1493262369132.pdf is
+0.998221092757
+Accuracy for 5 folds KNN Classifier 0.9994410181712998
+Accuracy for 5 folds decision tree 0.9980180731604011
+F-Measure for 5 folds KNN Classifier 0.9315014910743266
+F-Measure for 5 folds Decision tree 0.5995037697018747
+
+```
 
 
 # Desicion Tree and K-Nearest Neighbors
